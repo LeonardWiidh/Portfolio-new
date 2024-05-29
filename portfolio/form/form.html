@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>Uppgift 6</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+<body id="TOP">
+    <header>
+        <div class="top-header">
+            <div class="logo"><h1>Feedback</h1></div>
+            <nav>
+                <ul class="primary-navigation">
+                    <li class="li2"><a href="/portfolio/Hem/portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <div class="container">
+            <h1>Feedbackformulär</h1>
+            <form action="submit_feedback.php" method="post">
+                <div class="form-group">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="ease-of-use">vilket kön är du?</label>
+                    <select id="ease-of-use" name="ease-of-use" required>
+                        <option value="">Välj</option>
+                        <option value="Man">Man</option>
+                        <option value="Kvinna">Kvinna</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-postadress:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Hur skulle du betygsätta vår tjänst? (1-5)</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="good">Vad tyckte du var bra med vår tjänst?</label>
+                    <textarea id="good" name="good" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="improvements">Vad kan vi förbättra?</label>
+                    <textarea id="improvements" name="improvements" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="ease-of-use">Hur enkelt var det att använda vår tjänst?</label>
+                    <select id="ease-of-use" name="ease-of-use" required>
+                        <option value="">Välj</option>
+                        <option value="Lätt">Lätt</option>
+                        <option value="Medel">Medel</option>
+                        <option value="Svårt">Svårt</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Övriga kommentarer eller förslag:</label>
+                    <textarea id="comments" name="comments" rows="3"></textarea>
+                </div>
+                <button type="submit">Skicka feedback</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>Om Oss</h2>
+                <p>Vi är ett företag som strävar efter att leverera de bästa tjänsterna till våra kunder.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Snabblänkar</h2>
+                <ul>
+                    <li><a href="#">Hem</a></li>
+                    <li><a href="#">Tjänster</a></li>
+                    <li><a href="#">Om Oss</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Kontakt</h2>
+                <p>Email: info@företag.se</p>
+                <p>Telefon: 0123-456789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Företag. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>  
+</body>
+</html>

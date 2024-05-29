@@ -1,0 +1,70 @@
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-inline: auto;
+}
+header {
+    color: white;
+    background: linear-gradient(to left, rgb(172, 69, 86), rgb(100, 16, 100));  
+}
+
+
+aside {
+    margin: 5rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-inline: auto;
+}
+.li3, .li3:visited {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: rgb(162, 18, 90);
+}
+.li2:hover {
+    text-decoration: underline;
+    color: rgb(0, 8, 255)
+}
+body {
+    background: whitesmoke;
+    font-family: sans-serif;
+}
+
+main { min-height:100vh;  }     
+
+
+.grid-row:nth-child(even) {
+    background-color: rgb(205, 202, 202);
+    padding: 3px;
+}
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.jumplink{
+    text-decoration: none;
+    color: rgb(162, 18, 90)
+}
+.logo{
+    display: flex;
+    gap: 1rem;
+}
+
+.div-hi{
+    column-count: 2;
+    column-gap: 3rem;
+
+}
